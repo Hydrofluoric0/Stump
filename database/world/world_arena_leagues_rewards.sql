@@ -1,0 +1,136 @@
+create table arena_leagues_rewards
+(
+    Id               int auto_increment
+        primary key,
+    RewardId         int          not null,
+    SeasonId         int unsigned not null,
+    LeagueId         int unsigned not null,
+    TitlesRewardsCSV mediumtext   not null,
+    EndSeasonRewards tinyint      not null
+)
+    engine = MyISAM
+    charset = utf8;
+
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (1, 31, 0, 6, '247', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (2, 33, 0, 7, '247', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (3, 34, 0, 8, '247', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (4, 35, 0, 9, '247', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (5, 36, 0, 10, '247', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (6, 37, 0, 11, '247', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (7, 38, 0, 12, '247', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (8, 39, 0, 13, '247', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (9, 40, 0, 14, '247', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (10, 41, 0, 15, '247', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (11, 42, 0, 16, '248', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (12, 43, 0, 17, '248', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (13, 44, 0, 18, '248', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (14, 45, 0, 20, '248', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (15, 46, 0, 21, '248', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (16, 47, 0, 22, '248', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (17, 48, 0, 23, '248', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (18, 49, 0, 24, '248', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (19, 50, 0, 25, '248', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (20, 51, 0, 26, '248', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (21, 52, 0, 27, '249', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (22, 53, 0, 28, '249', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (23, 54, 0, 29, '249', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (24, 55, 0, 30, '249', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (25, 56, 0, 31, '249', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (26, 57, 0, 32, '249', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (27, 58, 0, 33, '249', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (28, 59, 0, 34, '249', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (29, 60, 0, 48, '249', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (30, 61, 0, 35, '249', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (31, 62, 0, 36, '250', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (32, 63, 0, 37, '250', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (33, 64, 0, 38, '250', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (34, 65, 0, 39, '250', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (35, 66, 0, 40, '250', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (36, 67, 0, 42, '251', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (37, 68, 0, 43, '251', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (38, 69, 0, 44, '251', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (39, 70, 0, 45, '251', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (40, 71, 0, 46, '251', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (41, 72, 0, 47, '252', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (42, 80, 0, 6, '247', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (43, 81, 0, 7, '247', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (44, 82, 0, 8, '247', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (45, 83, 0, 9, '247', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (46, 84, 0, 10, '247', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (47, 85, 0, 11, '247', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (48, 86, 0, 12, '247', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (49, 87, 0, 13, '247', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (50, 88, 0, 14, '247', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (51, 89, 0, 15, '247', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (52, 90, 0, 16, '248', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (53, 91, 0, 17, '248', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (54, 92, 0, 18, '248', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (55, 93, 0, 20, '248', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (56, 94, 0, 21, '248', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (57, 95, 0, 22, '248', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (58, 96, 0, 23, '248', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (59, 97, 0, 24, '248', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (60, 98, 0, 25, '248', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (61, 99, 0, 26, '248', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (62, 100, 0, 27, '249', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (63, 101, 0, 28, '249', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (64, 102, 0, 29, '249', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (65, 103, 0, 30, '249', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (66, 104, 0, 31, '249', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (67, 105, 0, 32, '249', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (68, 106, 0, 33, '249', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (69, 107, 0, 34, '249', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (70, 108, 0, 48, '249', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (71, 109, 0, 35, '249', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (72, 110, 0, 36, '250', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (73, 111, 0, 37, '250', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (74, 112, 0, 38, '250', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (75, 113, 0, 39, '250', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (76, 114, 0, 40, '250', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (77, 115, 0, 42, '251', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (78, 116, 0, 43, '251', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (79, 117, 0, 44, '251', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (80, 118, 0, 45, '251', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (81, 119, 0, 46, '251', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (82, 120, 0, 47, '252', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (83, 121, 0, 6, '247', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (84, 122, 0, 7, '247', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (85, 123, 0, 8, '247', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (86, 124, 0, 9, '247', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (87, 125, 0, 10, '247', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (88, 126, 0, 11, '247', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (89, 127, 0, 12, '247', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (90, 128, 0, 13, '247', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (91, 129, 0, 14, '247', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (92, 130, 0, 15, '247', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (93, 131, 0, 16, '248', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (94, 132, 0, 17, '248', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (95, 133, 0, 18, '248', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (96, 134, 0, 20, '248', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (97, 135, 0, 21, '248', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (98, 136, 0, 22, '248', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (99, 137, 0, 23, '248', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (100, 138, 0, 24, '248', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (101, 139, 0, 25, '248', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (102, 140, 0, 26, '248', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (103, 141, 0, 27, '249', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (104, 142, 0, 28, '249', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (105, 143, 0, 29, '249', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (106, 144, 0, 30, '249', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (107, 145, 0, 31, '249', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (108, 146, 0, 32, '249', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (109, 147, 0, 33, '249', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (110, 148, 0, 34, '249', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (111, 149, 0, 48, '249', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (112, 150, 0, 35, '249', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (113, 151, 0, 36, '250', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (114, 152, 0, 37, '250', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (115, 153, 0, 38, '250', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (116, 154, 0, 39, '250', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (117, 155, 0, 40, '250', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (118, 156, 0, 42, '251', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (119, 157, 0, 43, '251', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (120, 158, 0, 44, '251', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (121, 159, 0, 45, '251', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (122, 160, 0, 46, '251', 1);
+INSERT INTO world.arena_leagues_rewards (Id, RewardId, SeasonId, LeagueId, TitlesRewardsCSV, EndSeasonRewards) VALUES (123, 161, 0, 47, '252', 1);
