@@ -22,6 +22,8 @@ x64/
 # Exceptions for this repo
 !src/Stump.DofusProtocol.Messages/Messages/Messages/Debug
 !src/Stump.DofusProtocol.D2OClasses/Tools/Bin
+!src/Stump.GUI.AuthConsole/bin/Debug/swf_patchs
+!src/Stump.GUI.WorldConsole/bin/Debug/patterns
 
 # build folder is nowadays used for build scripts and should not be ignored
 #build/
