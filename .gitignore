@@ -13,19 +13,15 @@
 *.sln.docstates
 
 # Build results
-[Dd]ebug/
+/bin/[Dd]ebug/
 # Exception for this repo
 !src/Protocol/Messages/Messages/Debug
-[Rr]elease/
+/bin/[Rr]elease/
 x64/
 [Bb]in/
 [Oo]bj/
 # build folder is nowadays used for build scripts and should not be ignored
 #build/
-
-# Stump useless directories to remove later
-Run/
-Docs/
 
 # NuGet Packages
 *.nupkg

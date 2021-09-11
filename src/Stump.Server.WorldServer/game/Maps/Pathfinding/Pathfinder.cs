@@ -3,28 +3,9 @@ using System.Drawing;
 using System.Linq;
 using System.Collections.Generic;
 using Stump.Core.Attributes;
-using Stump.Core.Extensions;
-using Stump.Core.Reflection;
 using Stump.DofusProtocol.Enums;
-using Stump.Server.BaseServer.Commands;
-using Stump.Server.BaseServer.IPC.Objects;
-using Stump.Server.WorldServer;
-using Stump.Server.WorldServer.Commands.Trigger;
-using Stump.Server.WorldServer.Game;
-using Stump.Server.WorldServer.Game.Actors.RolePlay.Characters;
-using Stump.Server.WorldServer.Game.Breeds;
 using Stump.Server.WorldServer.Game.Maps.Cells;
-using System;
-using System.ComponentModel;
-using System.Diagnostics;
-using System.DirectoryServices;
-using System.Globalization;
-using System.Linq;
-using System.Net;
 using Stump.Core.Collections;
-using Stump.DofusProtocol.Enums;
-using Stump.Server.WorldServer.Database.World;
-using Stump.Server.WorldServer.Game.Maps.Cells;
 
 namespace Stump.Server.WorldServer.Game.Maps.Pathfinding
 {

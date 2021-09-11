@@ -1,4 +1,5 @@
 ﻿
+using Stump.Server.WorldServer;
 using System;
 using System.Diagnostics;
 using System.Threading;
@@ -9,7 +10,7 @@ namespace Stump.GUI.WorldConsole
     {
         static void Main(string[] args)
         {
-            var server = new Stump.Server.WorldServer.WorldServer();
+            var server = new WorldServer();
             if (!Debugger.IsAttached)
             {
                 try

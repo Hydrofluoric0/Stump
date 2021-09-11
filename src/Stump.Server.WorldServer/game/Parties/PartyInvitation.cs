@@ -1,4 +1,4 @@
-using Stump.Server.WorldServer.Game.Actors.RolePlay.Characters;
+﻿using Stump.Server.WorldServer.Game.Actors.RolePlay.Characters;
 using Stump.Server.WorldServer.Game.Notifications;
 using Stump.Server.WorldServer.Handlers.Context.RolePlay.Party;
 

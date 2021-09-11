@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Linq;
 using Stump.Core.Pool;
 using Stump.DofusProtocol.Enums;

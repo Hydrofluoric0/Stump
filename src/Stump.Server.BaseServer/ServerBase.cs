@@ -194,10 +194,6 @@ namespace Stump.Server.BaseServer
             InstanceAsBase = this;
             Initializing = true;
 
-            Version = ((AssemblyInformationalVersionAttribute)System.Reflection.Assembly.GetExecutingAssembly()
-                         .GetCustomAttributes<AssemblyInformationalVersionAttribute>().FirstOrDefault())
-                         .InformationalVersion;
-
             /* Initialize Logger */
             NLogHelper.DefineLogProfile(true, true);
             NLogHelper.EnableLogging();

