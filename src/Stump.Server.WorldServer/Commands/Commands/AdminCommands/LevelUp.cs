@@ -10,39 +10,23 @@ public class LevelUp : TargetCommand
     {
         Aliases = new[] { "levelup" };
         RequiredRole = RoleEnum.Administrator;
-        Description = "Augmente le niveau d'un personnage.";
-        AddParameter("amount", "amount", "Quantité de niveau a ajouté.", (short)1);
-        AddTargetParameter(true, "Character who will level up");
+        Description = "Set the level of the designated character";
+        AddParameter<byte>("level", "level", "Level to set");
+        AddTargetParameter(true, "Character targeted");
     }
 
     public override void Execute(TriggerBase trigger)
     {
-        var source = (trigger as GameTrigger).Character;
-        if (source.Name == "[Aguabrial]" || source.Name == "[Aerafal]")
-            foreach (var target in GetTargets(trigger))
-        {
-            byte delta;
+        var level = trigger.Get<byte>("level");
 
-            var amount = trigger.Get<short>("amount");
-            if (amount > 0 && amount <= byte.MaxValue)
+        foreach (var target in GetTargets(trigger))
+        {
+            if (level > 0 && level <= byte.MaxValue)
             {
-                delta = (byte)(amount);
-                target.LevelUp(delta);
-                trigger.Reply("Agregados " + trigger.Bold("{0}") + " niveles a '{1}'.", delta, target.Name);
+                target.LevelUp(level);
+                trigger.Reply($"The character {trigger.Bold(target.Name)} is now level ${level}");
 
             }
-            else if (amount < 0 && -amount <= byte.MaxValue)
-            {
-                trigger.ReplyError("Level invalide.");
-            }
-            else
-            {
-                trigger.ReplyError("Level invalide.");
-            }
-        }
-         else
-        {
-            trigger.ReplyError("Vous n'êtes pas autorisé à utilisé cette commande.");
         }
     }
 }
