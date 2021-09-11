@@ -14,12 +14,15 @@
 
 # Build results
 /bin/[Dd]ebug/
-# Exception for this repo
-!src/Protocol/Messages/Messages/Debug
 /bin/[Rr]elease/
 x64/
 [Bb]in/
 [Oo]bj/
+
+# Exceptions for this repo
+!src/Stump.DofusProtocol.Messages/Messages/Messages/Debug
+!src/Stump.DofusProtocol.D2OClasses/Tools/Bin
+
 # build folder is nowadays used for build scripts and should not be ignored
 #build/
 
